@@ -1,0 +1,22 @@
+<div class="sections__container">
+  <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+    <div class="section" [ngClass]="{'active': isActiveRoute('')}">
+      _olá-mundo
+    </div>
+  </a>
+  <a routerLink="sobre" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+    <div class="section" [ngClass]="{'active': isActiveRoute('sobre')}">
+      _sobre-mim
+    </div>
+  </a>
+  <a routerLink="projetos" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+    <div class="section" [ngClass]="{'active': isActiveRoute('projetos')}">
+      _projetos
+    </div>
+  </a>
+  <a routerLink="contato" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+    <div class="section-contact" [ngClass]="{'active': isActiveRoute('contato')}">
+      _contate-me
+    </div>
+  </a>
+</div>

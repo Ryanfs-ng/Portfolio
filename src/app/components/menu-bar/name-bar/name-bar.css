@@ -1,0 +1,15 @@
+.name-bar__container {
+  width: 20vw;
+  border-right: 1px solid #353e4d;
+  /* border-bottom: 1px solid #353e4d; */
+  line-height: 46px;
+}
+
+.name-bar {
+  padding-left: 20px;
+  user-select: none;
+}
+
+.name-bar:hover{
+  background-color: #0e203088;
+}

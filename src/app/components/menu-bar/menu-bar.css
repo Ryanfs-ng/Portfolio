@@ -1,0 +1,11 @@
+.menu-bar__container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  border-bottom: 1px solid #353e4d;
+  height: 100%;
+
+  line-height: 46px;
+  color: #738299;
+  font-size: 14px;
+}

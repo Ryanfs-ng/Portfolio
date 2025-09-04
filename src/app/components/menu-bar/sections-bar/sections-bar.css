@@ -1,0 +1,38 @@
+.sections__container{
+  display: flex ;
+  flex-direction: row;
+  width: 80vw;
+}
+
+.section {
+  display: flex;
+  border-right: 1px solid #353e4d;
+  padding: 0px 20px;
+}
+
+.section.active{
+  border-bottom: 2px solid #da9b3e;
+}
+
+.section:hover {
+  background-color: #0e203088;
+  color: #ffffff;
+}
+
+.section-contact{
+  position: absolute;
+  right: 0;
+  border-left: 1px solid #353e4d;
+  padding: 0px 20px;
+  line-height: 46px;
+}
+
+.section-contact.active{
+  border-bottom: 2px solid #da9b3e;
+  top: -1px;
+}
+
+.section-contact:hover {
+  background-color: #0e203088;
+  color: #ffffff;
+}
