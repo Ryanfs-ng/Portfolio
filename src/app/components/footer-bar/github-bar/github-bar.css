@@ -1,0 +1,33 @@
+.github-bar__container {
+  display: flex;
+  margin-left: 75vw;
+
+}
+
+.github-user:hover{
+  transition: 0.3s;
+  background-color: #0e203088;
+  color: #ffffff;
+}
+
+.github-user{
+    justify-content: flex-end;
+    align-self: flex-end;
+    border-left: 1px solid #353e4d;
+    margin-left: auto;
+    padding-left: 10px;
+}
+
+.github__bar > span:hover{
+  transition: 0.3s;
+  color: #ffffff;
+}
+
+.github-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:5px;
+  font-size: 15px;
+  width: 1.4em;
+}

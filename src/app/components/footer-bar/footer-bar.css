@@ -1,0 +1,13 @@
+.footer__container {
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #353e4d;
+  width: 100%;
+  line-height: 45px;
+}
+
+.footer__bar {
+  display: flex;
+}
+
+

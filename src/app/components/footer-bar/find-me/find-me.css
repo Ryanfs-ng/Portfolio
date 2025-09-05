@@ -1,0 +1,9 @@
+.find-me__bar__container {
+  display: flex;
+  flex-direction: row;
+  border-right: 1px solid #353e4d;
+  padding: 0px 20px;
+  user-select: none;
+}
+
+

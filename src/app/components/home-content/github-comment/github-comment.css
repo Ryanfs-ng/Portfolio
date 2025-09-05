@@ -1,0 +1,11 @@
+.comment__container{
+  margin-top: 5vh;
+}
+
+.gitUrl {
+  margin-top: 2vh;
+}
+
+.gitUrl > a > span{
+  text-decoration: underline;
+}

@@ -1,0 +1,13 @@
+.title-above__content > h4 {
+  font-size: 1.1em;
+}
+
+.main-title__content > h1 {
+  font-size: 3.5em;
+  color: #f0f8ff;
+}
+
+.subtitle__content {
+  font-size: 1.5em;
+  color: #5051D4;
+}

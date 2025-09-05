@@ -1,0 +1,25 @@
+.social__container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__bar {
+  border-right: 1px solid #353e4d;
+  margin: auto;
+   height: 100%;
+   padding: 5px;
+}
+
+.social__bar > img {
+  display: flex;
+  width: 1.7em;
+
+}
+
+.social__bar:hover {
+  transition: 0.3s;
+  background-color: #0e203088;
+}

@@ -1,0 +1,9 @@
+.profile-pic__container {
+ display: flex;
+
+}
+
+.profile-pic__container > img {
+  border-radius: 50%;
+
+}

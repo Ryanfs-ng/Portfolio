@@ -15,6 +15,7 @@
 }
 
 .section:hover {
+  transition: 0.3s;
   background-color: #0e203088;
   color: #ffffff;
 }

@@ -1,0 +1,9 @@
+.home__container {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  height: 40vh;
+  margin: auto;
+  margin-right: 50vw;
+  margin-top: 20vh;
+}
