@@ -1,0 +1,26 @@
+.sidebar__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #353e4d;
+  width: 4vw;
+  height: 90vh;
+  padding: 5px;
+}
+
+.sidebar-icons > img {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.sidebar-icons > img:hover{
+ color: #fff;
+}
+
+.active {
+  fill: #ffffff;
+  transition: 0.3s;
+}

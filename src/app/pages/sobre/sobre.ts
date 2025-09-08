@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { AsideContent } from "../../components/sobre-content/aside-content/aside-content";
 
 @Component({
   selector: 'app-sobre',
-  imports: [],
+  imports: [AsideContent],
   templateUrl: './sobre.html',
   styleUrl: './sobre.css'
 })

@@ -1,0 +1,6 @@
+.sobre__container {
+  display: flex;
+  flex-direction: row;
+  height: 87%;
+  width: 100%;
+}

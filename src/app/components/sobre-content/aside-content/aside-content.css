@@ -1,0 +1,8 @@
+.aside__container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  height: 87vh;
+  width: 20vw;
+
+}
