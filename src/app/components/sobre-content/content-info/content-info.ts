@@ -1,14 +1,33 @@
 import { Component } from '@angular/core';
-import { NgForOf } from "@angular/common";
+import { NgForOf, NgIf } from "@angular/common";
 
 @Component({
   selector: 'app-content-info',
-  imports: [NgForOf],
+  imports: [NgForOf, NgIf],
   templateUrl: './content-info.html',
   styleUrl: './content-info.css'
 })
 export class ContentInfo {
-  texto:string = `Sou estudante de Engenharia de Software, entusiasta de tecnologia e constantemente em busca de aprender e explorar novas tendências e soluções inovadoras. Possuo experiência no desenvolvimento de sites, atuando tanto no front-end quanto no back-end, além de trabalhar com bancos de dados.`
 
-  linhas:string[] = this.texto.split('\n');
+  linhas:string[] =
+  [
+    '',
+    ' Sobre mim:',
+    ' Sou estudante de Engenharia de Software, entusiasta de' ,
+    'tecnologia e constantemente em busca de aprender e explorar',
+    'novas tendências e soluções inovadoras.',
+    '  Possuo experiência no desenvolvimento de sites, atuando',
+    'tanto no front-end quanto no back-end, além de trabalhar com',
+    'bancos de dados.',
+    '',
+    '  Tenho facilidade para atuar em equipes e participar da ',
+    'gestão de projetos, valorizando experiências que promovam',
+    'aprendizado e que possam ser aplicadas para otimizar',
+    'processos e resultados.',
+    '',
+    '  Estou sempre disposto a encarar novos desafios que',
+    'contribuam para meu crescimento profissional e para o',
+    'sucesso das equipes e projetos dos quais faço parte.',
+    ''
+  ];
 }
