@@ -1,0 +1,43 @@
+.content-info__container {
+  display: flex;
+  flex-direction: row;
+  /* overflow-x: auto; */
+  width: 40vw;
+  height: 100%;
+  border-left: 1px solid #353e4d;
+  border-right: 1px solid #353e4d;
+  padding: 20px;
+  padding-left: 40px;
+}
+
+.content-info-line{
+  display: flex;
+  flex-direction: column;
+}
+
+.line-number {
+
+}
+
+ .line-numbers {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      margin-right: 16px;
+      padding-right: 10px;
+      border-right: 1px solid #333;
+      color: #5c6370;
+      user-select: none;
+    }
+
+    .line-numbers div {
+      height: 20px;
+    }
+
+    .code {
+      white-space: pre;
+    }
+
+    .comment {
+      color: #6a9955;
+    }

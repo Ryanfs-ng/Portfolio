@@ -1,0 +1,17 @@
+.navbar-about__container {
+  display: flex;
+  flex-direction: row;
+  width: 40vw;
+  border: 1px solid #353e4d;
+}
+
+.navbar-section {
+  display: flex;
+  padding: 10px;
+  width: 10vw;
+  padding-left: 10px;
+  border-right: 1px solid #353e4d;
+  font-size: 14px;
+  user-select: none;
+  font-weight: bolder;
+}

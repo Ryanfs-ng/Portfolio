@@ -1,8 +1,18 @@
 <div class="dropdown-items__container">
   <div class="dropdown-personal">
-    <ul>
-      <li><a href="">bio.json</a></li>
-      <li><a href="">ensino.json</a></li>
-    </ul>
+   <div class="items" (click)="openFolder1()"
+    [ngClass]="{'dropdown-active': folder1Open}"
+   >
+      <img [src]= "folder1Open ? 'assets/icons/arrow-right-s-line.svg' : 'assets/icons/arrow-down-s-line.svg'" alt="arrow">
+      <img src="assets/icons/folder-3-fill-purple.svg" alt="folder">
+      <p>bio.json</p>
+   </div>
+   <div class="items" (click)="openFolder2()"
+    [ngClass]="{'dropdown-active': folder2Open}"
+   >
+      <img [src]= "folder2Open ? 'assets/icons/arrow-right-s-line.svg' : 'assets/icons/arrow-down-s-line.svg'" alt="arrow">
+      <img src="assets/icons/folder-3-fill-blue.svg" alt="folder">
+      <p>ensino.json</p>
+   </div>
   </div>
 </div>

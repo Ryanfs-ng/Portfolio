@@ -4,5 +4,9 @@
   height: 100%;
   height: 87vh;
   width: 20vw;
+  border-right: 1px solid #353e4d;
+}
 
+content__container{
+  display: flex;
 }
