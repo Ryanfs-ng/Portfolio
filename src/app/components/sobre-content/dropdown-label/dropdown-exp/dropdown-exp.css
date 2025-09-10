@@ -1,0 +1,25 @@
+
+.dropdown-personal {
+  padding: 5px;
+}
+
+.items > img {
+  margin-right: 5px;
+  height: 18px;
+}
+
+.items > p {
+  font-size: 15px;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.dropdown-active > p{
+  transition: 0.3s;
+  color: #ffffff
+}

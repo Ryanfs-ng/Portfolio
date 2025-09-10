@@ -1,0 +1,32 @@
+
+.content-info__container {
+  font-family: 'Fira Code', monospace;
+  padding: 16px;
+  max-width: 40vw;
+  box-sizing: border-box;
+  border: 1px solid #3c3c3c;
+  overflow-x: auto;
+  height: 100%;
+}
+
+.content-info-line {
+  display: flex;
+  line-height: 1.5;
+}
+
+.line-number {
+  width: 16px;
+  margin-right: 8px;
+}
+
+.line-asterisk {
+  width: 15px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 8px;
+  user-select: none;
+}
+
+.code-text {
+  flex: 1;
+}

@@ -1,0 +1,18 @@
+<div class="dropdown-items__container">
+  <div class="dropdown-personal">
+   <div class="items" (click)="toggleFolder1()"
+    [ngClass]="{'dropdown-active': service.folder1Open}"
+   >
+      <img [src]= "service.folder1Open ? 'assets/icons/arrow-right-s-line.svg' : 'assets/icons/arrow-down-s-line.svg'" alt="arrow">
+      <img src="assets/icons/gitlab-fill.svg" alt="folder">
+      <p>exp.json</p>
+   </div>
+   <div class="items" (click)="toggleFolder2()"
+    [ngClass]="{'dropdown-active': service.folder2Open}"
+   >
+      <img [src]= "service.folder2Open ? 'assets/icons/arrow-right-s-line.svg' : 'assets/icons/arrow-down-s-line.svg'" alt="arrow">
+      <img src="assets/icons/code-s-slash-fill.svg" alt="code">
+      <p>tech.json</p>
+   </div>
+  </div>
+</div>

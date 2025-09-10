@@ -2,8 +2,13 @@
   <app-sidebar></app-sidebar>
   <app-dropdown-label></app-dropdown-label>
   <div class="content__container" *ngIf="service.showPersonalInfo">
-    <app-navbar></app-navbar>
+    <app-navbar titleNavbar="info-pessoal"></app-navbar>
       <app-content-info *ngIf="service.navbarContent_about"></app-content-info>
       <app-content-education *ngIf="service.navbarContent_education"></app-content-education>
+  </div>
+  <div class="content__container" *ngIf="service.showExpInfo">
+    <app-navbar titleNavbar="experiencias"></app-navbar>
+    <app-content-exp *ngIf="service.navbarContent_exp"></app-content-exp>
+    <app-content-tech *ngIf="service.navbarContent_tech"></app-content-tech>
   </div>
 </div>

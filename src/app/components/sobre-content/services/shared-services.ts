@@ -8,13 +8,16 @@ export class SharedServices {
   // DropDown-label
   folder1Open:boolean = true;
   folder2Open:boolean = false;
-  // Abas navbar
+  // Abas navbar INFO
   navbarContent_about:boolean = true;
   navbarContent_education:boolean = false;
   // Sidebar
   showExpInfo:boolean = false;
   activeIcon:string = 'sobre';
   showPersonalInfo:boolean = true;
+  // Abas navbar EXP
+  navbarContent_exp:boolean = true;
+  navbarContent_tech:boolean = false;
 
 
   openFolder1():any {
@@ -62,7 +65,17 @@ export class SharedServices {
         this.showPersonalInfo = true;
         this.showExpInfo = false;
     };
+
   }
+    openContent_exp(): void {
+      this.navbarContent_exp = true;
+      this.navbarContent_tech = false;
+    }
+
+    openContent_tech(): void {
+      this.navbarContent_exp = false;
+      this.navbarContent_tech = true;
+    }
 
 
 

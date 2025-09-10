@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NgIf } from "@angular/common";
 import { SharedServices} from "../../services/shared-services";
+import { Input } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -10,4 +11,7 @@ import { SharedServices} from "../../services/shared-services";
 })
 export class Navbar {
   constructor(public service:SharedServices ) {}
+
+  @Input()
+  titleNavbar:string = '';
 }
