@@ -1,9 +1,13 @@
  <div class="dropdown__container">
-  <div class="dropdown__label">
+  <div class="dropdown__label" *ngIf="service.showPersonalInfo">
     <img src="assets/icons/arrow-down-s-fill.svg" alt="">
     <p>info-pessoal</p>
   </div>
-  <app-dropdown-personal></app-dropdown-personal>
+  <div class="dropdown__label" *ngIf="service.showExpInfo">
+     <img src="assets/icons/arrow-down-s-fill.svg" alt="">
+    <p>experiencias</p>
+  </div>
+  <app-dropdown-personal *ngIf="service.showPersonalInfo"></app-dropdown-personal>
    <div class="dropdown__label-contact">
     <img src="assets/icons/arrow-down-s-fill.svg" alt="">
     <p>contatos</p>

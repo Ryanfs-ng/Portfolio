@@ -1,18 +1,18 @@
 <div class="dropdown-items__container">
   <div class="dropdown-personal">
-   <div class="items" (click)="openFolder1()"
-    [ngClass]="{'dropdown-active': folder1Open}"
+   <div class="items" (click)="toggleFolder1()"
+    [ngClass]="{'dropdown-active': service.folder1Open}"
    >
-      <img [src]= "folder1Open ? 'assets/icons/arrow-right-s-line.svg' : 'assets/icons/arrow-down-s-line.svg'" alt="arrow">
+      <img [src]= "service.folder1Open ? 'assets/icons/arrow-right-s-line.svg' : 'assets/icons/arrow-down-s-line.svg'" alt="arrow">
       <img src="assets/icons/folder-3-fill-purple.svg" alt="folder">
-      <p>bio.json</p>
+      <p>bio.ts</p>
    </div>
-   <div class="items" (click)="openFolder2()"
-    [ngClass]="{'dropdown-active': folder2Open}"
+   <div class="items" (click)="toggleFolder2()"
+    [ngClass]="{'dropdown-active': service.folder2Open}"
    >
-      <img [src]= "folder2Open ? 'assets/icons/arrow-right-s-line.svg' : 'assets/icons/arrow-down-s-line.svg'" alt="arrow">
+      <img [src]= "service.folder2Open ? 'assets/icons/arrow-right-s-line.svg' : 'assets/icons/arrow-down-s-line.svg'" alt="arrow">
       <img src="assets/icons/folder-3-fill-blue.svg" alt="folder">
-      <p>ensino.json</p>
+      <p>ensino.ts</p>
    </div>
   </div>
 </div>

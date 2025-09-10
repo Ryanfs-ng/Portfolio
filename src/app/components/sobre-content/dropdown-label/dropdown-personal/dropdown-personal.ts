@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgClass } from "@angular/common";
+import { SharedServices } from '../../services/shared-services'
 
 @Component({
   selector: 'app-dropdown-personal',
@@ -9,25 +10,16 @@ import { NgClass } from "@angular/common";
 })
 export class DropdownPersonal {
 
-  folder1Open:boolean = false;
-  folder2Open:boolean = false;
+  constructor(public service: SharedServices) {}
 
-  openFolder1() {
-    this.folder1Open = !this.folder1Open;
-    if (this.folder1Open == true) {
-      this.folder2Open = false;
-    } else {
-      this.folder2Open = this.folder2Open;
-    }
+  toggleFolder1() {
+    this.service.openFolder1();
+    this.service.openContent_about();
   }
 
-  openFolder2() {
-    this.folder2Open = !this.folder2Open;
-     if (this.folder2Open == true) {
-      this.folder1Open = false;
-    } else {
-      this.folder1Open = this.folder1Open;
-    }
+  toggleFolder2() {
+    this.service.openFolder2();
+    this.service.openContent_education();
   }
 
 }

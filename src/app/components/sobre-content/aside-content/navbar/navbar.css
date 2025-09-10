@@ -15,3 +15,14 @@
   user-select: none;
   font-weight: bolder;
 }
+
+.navbar-section > img {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.navbar-section > img:hover {
+  background-color: #353e4d4f;
+  border-radius: 3px;
+  transition: 0.3s;
+}

@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { NgForOf, NgIf } from "@angular/common";
+import { NgFor, NgIf } from "@angular/common";
 
 @Component({
   selector: 'app-content-info',
-  imports: [NgForOf, NgIf],
+  imports: [NgFor, NgIf],
   templateUrl: './content-info.html',
   styleUrl: './content-info.css'
 })
