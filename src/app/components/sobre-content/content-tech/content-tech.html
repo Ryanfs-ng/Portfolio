@@ -1,19 +1,111 @@
-  <div class="content-info__container">
-    <div *ngFor="let linha of linhas; let i = index" class="content-info-line">
-      <span class="line-number">{{ i + 1 }}</span>
+  <div class="content__container">
+    <span class="jsonTitle">"Front-end"</span><span style="color: #ffffff;">:</span>
+    <!-- <img [src]= "frontContent ? 'assets/icons/arrow-down-s-line-orange.svg' : 'assets/icons/arrow-right-s-line-orange.svg'" alt="" height="18px" (click)="showFront()"> -->
+    <span style="color: rgb(228, 170, 63);"> [ </span> <br><br>
 
-      <ng-container *ngIf="i === 0">
-        <span class="code-text">/**</span>
-      </ng-container>
+    <div class="front-tech" *ngIf="frontContent">
+       <span class="fields-1">{{" { "}} </span><br><br>
+          <span class="jsonSubTitle">"frameworks"</span><span style="color: #ffffff;">:</span><span style="color: rgb(228, 170, 63);"> {{" { "}} </span> <br>
+            <p class="jsonText">
+              "NextJS"<span style="color: #ffffff;">,</span> <br>
+              "Angular"<span style="color: #ffffff;">,</span> <br>
+              "React Native"<span style="color: #ffffff;">,</span> <br>
+              "ReactJS"<span style="color: #ffffff;">,</span> <br>
+            </p> <br>
+          <span style="padding-left: 40px;" class="fields-1">{{" } "}} </span><br><br>
 
-      <ng-container *ngIf="i === linhas.length - 1 && i !== 0">
-       <span class="code-text">*/</span>
-      </ng-container>
+           <span class="jsonSubTitle">"coreSkills"</span><span style="color: #ffffff;">:</span><span style="color: rgb(228, 170, 63);"> {{" { "}} </span> <br>
+            <p class="jsonText">
+              "HTML"<span style="color: #ffffff;">,</span> <br>
+              "CSS"<span style="color: #ffffff;">,</span> <br>
+              "Typescript"<span style="color: #ffffff;">,</span> <br>
+            </p> <br>
+          <span style="padding-left: 40px;" class="fields-1">{{" } "}} </span><br><br>
 
-      <ng-container *ngIf="i !== 0 && i !== linhas.length - 1">
-      <span class="line-asterisk">*</span>
-      <span class="code-text">{{ linha }}</span>
-    </ng-container>
+          <span class="jsonSubTitle">"apiTechnologies"</span><span style="color: #ffffff;">:</span><span style="color: rgb(228, 170, 63);"> {{" { "}} </span> <br>
+            <p class="jsonText">
+              "RestAPI"<span style="color: #ffffff;">,</span> <br>
+              "JSON"<span style="color: #ffffff;">,</span> <br>
+            </p> <br>
+          <span style="padding-left: 40px;" class="fields-1">{{" } "}} </span><br><br>
 
+         <span class="fields-1">{{" } "}} </span><br><br>
+         <span style="color: rgb(228, 170, 63);"> ] </span> <br><br>
+    </div>
+    <div class="back-tech">
+      <span class="jsonTitle">"Back-end"</span><span style="color: #ffffff;">:</span><span style="color: rgb(228, 170, 63);"> [ </span> <br><br>
+        <span class="fields-1">{{" { "}} </span><br><br>
+          <span class="jsonSubTitle">"linguagensProgramacao"</span><span style="color: #ffffff;">:</span><span style="color: rgb(228, 170, 63);"> {{" { "}} </span> <br>
+            <p class="jsonText">
+              "Java"<span style="color: #ffffff;">,</span> <br>
+              "NodeJS"<span style="color: #ffffff;">,</span> <br>
+              "Python"<span style="color: #ffffff;">,</span> <br>
+            </p> <br>
+          <span style="padding-left: 40px;" class="fields-1">{{" } "}} </span><br><br>
+
+          <span class="jsonSubTitle">"frameworks"</span><span style="color: #ffffff;">:</span><span style="color: rgb(228, 170, 63);"> {{" { "}} </span> <br>
+            <p class="jsonText">
+              "Spring Boot"<span style="color: #ffffff;">,</span> <br>
+              "ExpressJS"<span style="color: #ffffff;">,</span> <br>
+              "Django"<span style="color: #ffffff;">,</span> <br>
+            </p> <br>
+          <span style="padding-left: 40px;" class="fields-1">{{" } "}} </span><br><br>
+
+          <span class="jsonSubTitle">"databases"</span><span style="color: #ffffff;">:</span><span style="color: rgb(228, 170, 63);"> {{" { "}} </span> <br>
+            <p class="jsonText">
+              "SQL / MySQL"<span style="color: #ffffff;">,</span> <br>
+              "PostgreSQL"<span style="color: #ffffff;">,</span> <br>
+              "MongoDB"<span style="color: #ffffff;">,</span> <br>
+            </p> <br>
+          <span style="padding-left: 40px;" class="fields-1">{{" } "}} </span><br><br>
+
+          <span class="jsonSubTitle">"apiServices"</span><span style="color: #ffffff;">:</span><span style="color: rgb(228, 170, 63);"> {{" { "}} </span> <br>
+            <p class="jsonText">
+              "REST API"<span style="color: #ffffff;">,</span> <br>
+              "GraphQL"<span style="color: #ffffff;">,</span> <br>
+            </p> <br>
+          <span style="padding-left: 40px;" class="fields-1">{{" } "}} </span><br><br>
+
+          <span class="fields-1">{{" } "}} </span><br><br>
+          <span style="color: rgb(228, 170, 63);"> {{" ] "}} </span><br><br>
+    </div>
+    <div class="others-tech">
+      <span class="jsonTitle">"Outras-Habilidades-Tecnicas"</span><span style="color: #ffffff;">:</span><span style="color: rgb(228, 170, 63);"> [ </span> <br><br>
+        <span class="fields-1">{{" { "}} </span><br><br>
+          <span class="jsonSubTitle">"linguagensProgramacao"</span><span style="color: #ffffff;">:</span><span style="color: rgb(228, 170, 63);"> {{" { "}} </span> <br>
+            <p class="jsonText">
+              "Python(Numpy, Pandas)"<span style="color: #ffffff;">,</span> <br>
+              "Python (Machine Learning)"<span style="color: #ffffff;">,</span> <br>
+              "C#"<span style="color: #ffffff;">,</span> <br>
+            </p> <br>
+          <span style="padding-left: 40px;" class="fields-1">{{" } "}} </span><br><br>
+
+          <span class="jsonSubTitle">"ferramentas"</span><span style="color: #ffffff;">:</span><span style="color: rgb(228, 170, 63);"> {{" { "}} </span> <br>
+            <p class="jsonText">
+              "Docker"<span style="color: #ffffff;">,</span> <br>
+              "Figma"<span style="color: #ffffff;">,</span> <br>
+              "Microsoft Project"<span style="color: #ffffff;">,</span> <br>
+              "VS Code"<span style="color: #ffffff;">,</span> <br>
+              "IntelliJ"<span style="color: #ffffff;">,</span> <br>
+              "PostMan"<span style="color: #ffffff;">,</span> <br>
+              "Insomnia"<span style="color: #ffffff;">,</span> <br>
+            </p> <br>
+          <span style="padding-left: 40px;" class="fields-1">{{" } "}} </span><br><br>
+
+          <span class="jsonSubTitle">"sistemasOperacionais"</span><span style="color: #ffffff;">:</span><span style="color: rgb(228, 170, 63);"> {{" { "}} </span> <br>
+            <p class="jsonText">
+              "Windows"<span style="color: #ffffff;">,</span> <br>
+              "MacOS"<span style="color: #ffffff;">,</span> <br>
+            </p> <br>
+          <span style="padding-left: 40px;" class="fields-1">{{" } "}} </span><br><br>
+
+           <span class="jsonSubTitle">"appMobile"</span><span style="color: #ffffff;">:</span><span style="color: rgb(228, 170, 63);"> {{" { "}} </span> <br>
+            <p class="jsonText">
+              "React Native"<span style="color: #ffffff;">,</span> <br>
+            </p> <br>
+          <span style="padding-left: 40px;" class="fields-1">{{" } "}} </span><br><br>
+
+          <span style="color: rgb(228, 170, 63);"> {{" ] "}} </span><br>
+          <br><span class="fields">{{" } "}}</span>
     </div>
   </div>

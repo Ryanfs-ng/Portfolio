@@ -20,4 +20,8 @@ export class DropdownExp {
     this.service.openFolder2();
     this.service.openContent_tech();
   }
+
+
 }
+
+

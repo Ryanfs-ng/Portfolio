@@ -1,5 +1,5 @@
 
-.content-info__container {
+.content__container {
   font-family: 'Fira Code', monospace;
   padding: 16px;
   max-width: 40vw;
@@ -9,24 +9,39 @@
   height: 100%;
 }
 
-.content-info-line {
-  display: flex;
-  line-height: 1.5;
+.jsonTitle {
+  color: rgb(217, 84, 84);
 }
 
-.line-number {
-  width: 16px;
-  margin-right: 8px;
+.fields {
+  color: rgb(228, 170, 63);
 }
 
-.line-asterisk {
-  width: 15px;
-  display: inline-block;
-  text-align: center;
-  margin-right: 8px;
-  user-select: none;
+.fields-1 {
+  color: rgb(228, 170, 63);
+  padding-left: 20px;
 }
 
-.code-text {
-  flex: 1;
+.jsonText {
+  margin-top: 5px;
+  padding-left: 25px;
+  color: rgb(228, 170, 63);
+}
+
+.jsonSubTitle {
+  padding-left: 20px;
+  color: rgb(217, 84, 84);
+}
+
+.content__container::-webkit-scrollbar {
+ width: 6px;
+}
+
+.content__container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.content__container::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2); /* Cor clara e opaca */
+  border-radius: 10px;
 }
