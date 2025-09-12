@@ -1,0 +1,27 @@
+.label-title {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 20vw;
+  height: 15vh;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #26334b;
+  outline: none;
+  resize: none;
+}
+
+textarea::-webkit-scrollbar {
+ width: 6px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}

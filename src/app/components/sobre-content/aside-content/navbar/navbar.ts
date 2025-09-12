@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { NgIf } from "@angular/common";
 import { SharedServices} from "../../services/shared-services";
 import { Input } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
-  imports: [NgIf],
+  imports: [],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css'
 })
