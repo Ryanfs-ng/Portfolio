@@ -1,0 +1,31 @@
+.asideCode__container {
+  padding-top: 15px;
+}
+
+.line-number{
+  margin-right: 30px;
+  margin-left: 20px;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  padding: 2px;
+  user-select: none ;
+}
+
+.var-color{
+  color: #a17cf8;
+  padding-left: 10px;
+}
+
+.varName-color{
+  color: #5D5CEC;
+  padding-left: 10px;
+
+}
+
+.quotation-color {
+  padding-left: 10px;
+  color: #DEA364;
+}

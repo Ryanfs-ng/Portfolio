@@ -19,3 +19,7 @@
   border-color: #717987;
   outline: none;
 }
+
+.form-label{
+  padding-bottom: 1.5em;
+}

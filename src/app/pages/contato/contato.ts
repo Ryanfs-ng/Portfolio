@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { DropdownContact } from "../../components/sobre-content/dropdown-label/dropdown-contact/dropdown-contact";
-import { FormsContato } from "../../components/contato-content/forms-contato/forms-contato";
+import { ContatoContent } from "../../components/contato-content/contato-content/contato-content";
 
 @Component({
   selector: 'app-contato',
-  imports: [DropdownContact, FormsContato],
+  imports: [ContatoContent],
   templateUrl: './contato.html',
   styleUrl: './contato.css'
 })
