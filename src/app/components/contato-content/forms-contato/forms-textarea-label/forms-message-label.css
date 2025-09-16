@@ -25,3 +25,24 @@ textarea::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
 }
+
+.btn-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn-submit > button {
+  padding: 10px;
+  border-radius: 10px;
+  width: 100px;
+  border: 1px solid #26334b;
+  transition: 0.3s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #26334b;;
+  color: aliceblue;
+}

@@ -11,4 +11,10 @@ export class FormsService {
 
   formMessage:string = ''
 
+  textName:string = ''
+
+  textEmail:string = ''
+
+  textMessage:string = ''
+
 }

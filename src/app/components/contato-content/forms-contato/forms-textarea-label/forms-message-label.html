@@ -3,7 +3,10 @@
     {{labelTitle}}
   </div>
   <div class="label-textarea">
-    <textarea name="message">
+    <textarea [(ngModel)]="service.textMessage" name="message">
     </textarea>
+  </div>
+  <div class="btn-submit">
+    <button>Enviar</button>
   </div>
 </div>

@@ -18,6 +18,5 @@ export class FormsLabel {
   @Input()
   labelTitle:string = '';
 
-  @Input()
-  labelPlaceholder:string = '';
+
 }

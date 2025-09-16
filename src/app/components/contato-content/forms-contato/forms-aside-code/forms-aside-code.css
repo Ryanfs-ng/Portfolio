@@ -2,6 +2,17 @@
   padding-top: 15px;
 }
 
+.mensagem__container{
+  display: block;
+  max-width: 100%;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  display: block;
+  padding-left: 10px;
+  color: #DEA364;
+}
+
 .line-number{
   margin-right: 30px;
   margin-left: 20px;
@@ -10,6 +21,7 @@
 .line {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   padding: 2px;
   user-select: none ;
 }
@@ -26,6 +38,7 @@
 }
 
 .quotation-color {
+  display: block;
   padding-left: 10px;
   color: #DEA364;
 }

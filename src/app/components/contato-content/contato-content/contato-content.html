@@ -14,7 +14,12 @@
            <app-forms-contato></app-forms-contato>
          </div>
          <div class="formsCode__container">
-          <app-forms-aside-code></app-forms-aside-code>
+          <app-forms-aside-code
+          [formName]="service.textName"
+          [formEmail]="service.textEmail"
+          [formMessage]="service.textMessage"
+          >
+        </app-forms-aside-code>
          </div>
        </div>
      </div>
