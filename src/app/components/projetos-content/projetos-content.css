@@ -1,0 +1,33 @@
+
+.projetos-content__container{
+  display: flex;
+}
+
+.dropdown__label-projects {
+  display: flex;
+  padding: 10px;
+  padding-left: 20px;
+  border-bottom: 1px solid #353e4d;
+  font-size: 14px;
+  height: 2.9em;
+  user-select: none;
+  font-weight: bolder;
+}
+
+.dropdown__label-projects > p{
+  color: #ffffff;
+  cursor: pointer;
+}
+
+img {
+  height: 15px;
+  margin-right: 8px;
+  color: #ffffffbe;
+}
+
+
+.dropdown__container{
+  height: 90vh;
+  border-right: 1px solid #353e4d;
+  width: 20vw;
+}

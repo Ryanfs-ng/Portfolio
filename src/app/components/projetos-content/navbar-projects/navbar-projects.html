@@ -1,0 +1,11 @@
+<div class="navbar-projects__container">
+  <div class="navbar-section">
+    <p *ngIf="service.selectedLanguage.includes('HTML')">HTML;</p>
+    <p *ngIf="service.selectedLanguage.includes('CSS')">CSS;</p>
+    <p *ngIf="service.selectedLanguage.includes('Angular')">Angular;</p>
+    <p *ngIf="service.selectedLanguage.includes('Java')">Java;</p>
+    <p *ngIf="service.selectedLanguage.includes('React Native')">React Native;</p>
+    <p *ngIf="service.selectedLanguage.length === 0 ">all;</p>
+    <img src="assets/icons/close-fill.svg" alt="X" height="16" width="16">
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="dropdown-label-project__container">
+  <div class="dropdown-label">
+    <label>
+      <input class="checkbox" type="checkbox" name="myCheckbox" [value]="languageName" (click)="service.addLanguage(languageName, $event)"/>
+      <img src={{languageIcon}} alt=""><p>{{languageName}}</p>
+    </label>
+  </div>
+</div>
