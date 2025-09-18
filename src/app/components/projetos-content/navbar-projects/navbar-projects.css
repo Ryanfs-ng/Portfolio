@@ -1,13 +1,13 @@
 .navbar-projects__container {
   display: flex;
   flex-direction: row;
-  width: 80vw;
-  border-top: 1px solid #353e4d;
-  border-bottom: 1px solid #353e4d;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .navbar-section {
   display: flex;
+  align-items: center;
   padding: 10px;
   border-right: 1px solid #353e4d;
 }

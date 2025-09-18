@@ -1,6 +1,8 @@
 
 .projetos-content__container{
   display: flex;
+  width: 100vw;
+  flex-direction: row;
 }
 
 .dropdown__label-projects {
@@ -30,4 +32,23 @@ img {
   height: 90vh;
   border-right: 1px solid #353e4d;
   width: 20vw;
+}
+
+.main-content__container {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 100%;
+}
+
+.navbar__container {
+  display: flex;
+  height: 2.5em;
+  width: 100%;
+  border-bottom: 1px solid #353e4d;
+}
+
+.projects__container {
+  flex: 1;
+  overflow-y: auto;
 }
