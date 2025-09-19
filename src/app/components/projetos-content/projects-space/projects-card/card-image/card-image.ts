@@ -9,5 +9,8 @@ import { Component, Input } from '@angular/core';
 export class CardImage {
 
   @Input()
-  cardCover:string = 'assets/imgs/devexemplos.jpg'
+  cardCover:string = ''
+
+  @Input()
+  projectIcon:string = ''
 }

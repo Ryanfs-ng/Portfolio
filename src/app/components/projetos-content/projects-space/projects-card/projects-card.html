@@ -1,6 +1,16 @@
 <div class="projects-card__container">
-  <app-card-title></app-card-title>
+  <app-card-title [cardTitle]="cardTitle"></app-card-title>
   <div class="projects-card__content">
-    <app-card-image></app-card-image>
+    <app-card-image
+    [cardCover]="cardCover"
+    [projectIcon]="projectIcon"
+    >
+  </app-card-image>
+    <app-card-content
+    [descriptionText]="descriptionText"
+    [viewProjectgit]="viewProjectgit"
+    [webProjectLink]="webProjectLink"
+    >
+  </app-card-content>
   </div>
 </div>
