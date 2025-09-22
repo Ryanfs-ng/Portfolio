@@ -8,9 +8,7 @@ import { FooterBar } from "./components/footer-bar/footer-bar";
   imports: [RouterOutlet, MenuBar, FooterBar],
   templateUrl: './app.html',
   styleUrl: './app.css',
-  animations: []
 })
 export class App {
   protected readonly title = signal('portfolio');
-
 }
