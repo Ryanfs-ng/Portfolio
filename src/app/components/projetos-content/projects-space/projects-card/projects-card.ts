@@ -29,4 +29,7 @@ export class ProjectsCard {
   @Input()
   projectIcon:string = ''
 
+  @Input()
+  prefix:string = ''
+
 }

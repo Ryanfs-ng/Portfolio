@@ -1,5 +1,8 @@
 <div class="projects-card__container">
-  <app-card-title [cardTitle]="cardTitle"></app-card-title>
+  <div class="cardTitle">
+    <span class="prefix">{{prefix}}</span>
+    <app-card-title [cardTitle]="cardTitle"></app-card-title>
+  </div>
   <div class="projects-card__content">
     <app-card-image
     [cardCover]="cardCover"

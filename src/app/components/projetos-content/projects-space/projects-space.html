@@ -1,14 +1,13 @@
 <div class="projects-space__container">
-  <app-projects-card
-  cardTitle="Teste1"
-  cardCover="assets/imgs/devexemplos.jpg"
-  descriptionText="TESTE TESTE TESTE TESTE TESTETESTETESTETESTETESTETESTE "
-  viewProjectgit="https://github.com/Ryanfs-ng"
-  webProjectLink="https://github.com/Ryanfs-ng"
-  projectIcon="assets/icons/reactjs-line-black.svg"
-  ></app-projects-card>
-  <app-projects-card></app-projects-card>
-  <app-projects-card></app-projects-card>
-  <app-projects-card></app-projects-card>
-  <app-projects-card></app-projects-card>
+  <ng-container *ngFor="let project of filteredProjects; let i = index">
+    <app-projects-card
+    [prefix]="'Projeto ' + (i + 1)"
+    [cardTitle]="project.title"
+    [cardCover]="project.image"
+    [descriptionText]="project.description"
+    [viewProjectgit]="project.git"
+    [webProjectLink]="project.web"
+    [projectIcon]="project.icon"
+    ></app-projects-card>
+  </ng-container>
 </div>

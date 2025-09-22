@@ -10,3 +10,13 @@
   display: flex;
   overflow: hidden;
 }
+
+.prefix {
+  color: #615FFF;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.cardTitle {
+  display: flex;
+}
