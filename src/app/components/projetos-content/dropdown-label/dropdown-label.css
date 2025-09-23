@@ -14,9 +14,14 @@
   display: flex;
   align-items: center;
   padding-left: 5px;
-  color: aliceblue;
   font-family: monospace;
   font-size: 14px;
+}
+
+@media (min-width: 1900px) {
+  .dropdown-label > label > p {
+    font-size: 18px;
+  }
 }
 
 .dropdown-label > label > img {
@@ -59,10 +64,4 @@ input[type=checkbox]:checked {
   display: flex;
   flex-direction: column;
   padding: 50px;
-}
-
-.projects__container{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 }

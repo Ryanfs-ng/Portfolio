@@ -1,6 +1,4 @@
 .card-title__container {
   display: flex;
-  width: 15vw;
-  flex-direction: column;
   margin-bottom: 10px;
 }
