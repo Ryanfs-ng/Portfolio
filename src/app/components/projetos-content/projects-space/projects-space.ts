@@ -13,7 +13,7 @@ export class ProjectsSpace {
   constructor (public service:ServicesProject) {}
 
     projects = [
-      {title: 'Teste 1', image: 'assets/imgs/devexemplos.jpg', description: 'TESTE TESTE TESTE TESTE TESTE TESTE TESTE  ', git: 'https://github.com/Ryanfs-ng', web: 'https://github.com/Ryanfs-ng', icon: 'assets/icons/reactjs-line-black.svg', languages:['HTML', 'React Native']},
+      {title: 'Angular Project', image: 'assets/imgs/devexemplos.jpg', description: 'Oiiii  ', git: 'https://github.com/Ryanfs-ng', web: 'https://github.com/Ryanfs-ng', icon: 'assets/icons/reactjs-line-black.svg', languages:['HTML', 'React Native']},
       {title: 'Teste 2', image: 'assets/imgs/devexemplos.jpg', description: 'TESTE TESTE TESTE', git: '', web: '', icon: 'assets/icons/angularjs-fill-black.svg', languages:['Angular', 'HTML'] },
       {title: 'Teste 3', image: 'assets/imgs/devexemplos.jpg', description: 'TESTE TESTE TESTE', git: '', web: '', icon: 'assets/icons/java-line-black.svg', languages:['Java']},
       {title: 'Teste 4', image: 'assets/imgs/devexemplos.jpg', description: 'TESTE TESTE TESTE', git: '', web: '', icon: 'assets/icons/reactjs-line-black.svg' },
