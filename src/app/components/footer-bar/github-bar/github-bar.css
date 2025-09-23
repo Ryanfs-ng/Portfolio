@@ -1,6 +1,7 @@
 .github-bar__container {
   display: flex;
-  margin-left: 75vw;
+  align-items: center;
+  border: 1px solid red;
 }
 
 .github-user:hover{

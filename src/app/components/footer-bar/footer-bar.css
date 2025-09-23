@@ -1,13 +1,22 @@
 .footer__container {
-  position: absolute;
+  position: fixed;
+  left: 0;
+  right: 0;
   bottom: 0;
   border-top: 1px solid #353e4d;
   width: 100%;
   line-height: 45px;
+  box-sizing: border-box;
+  z-index: 50;
 }
 
 .footer__bar {
   display: flex;
+  align-items: center;
 }
 
-
+.github__container {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}

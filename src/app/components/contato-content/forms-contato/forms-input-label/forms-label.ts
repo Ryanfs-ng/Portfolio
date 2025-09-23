@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
-import { Input } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormsService } from '../forms-service';
 import emailJs from '@emailjs/browser'
-import { JsonPipe } from '@angular/common';
 
 interface ContactForm {
   name:string;
