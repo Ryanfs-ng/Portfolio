@@ -1,6 +1,6 @@
 
 .dropdown-personal {
-  padding: 5px;
+  padding: 12px 5px 5px;
 }
 
 .items > img {
@@ -22,4 +22,12 @@
 .dropdown-active > p{
   transition: 0.3s;
   color: #ffffff
+}
+
+.arrow {
+  transition: transform 0.2s;
+}
+
+.arrow.open {
+  transform: rotate(-90deg);
 }

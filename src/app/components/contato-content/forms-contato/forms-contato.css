@@ -3,5 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 90px;
+  margin: 90px 20px;
+}
+
+@media (max-width: 900px) {
+  .forms-content__container {
+    margin: 30px 20px;
+  }
 }

@@ -1,5 +1,7 @@
 .name-bar__container {
   width: 20vw;
+  min-width: 150px;
+  flex-shrink: 0;
   border-right: 1px solid #353e4d;
   /* border-bottom: 1px solid #353e4d; */
   line-height: 46px;
@@ -13,4 +15,10 @@
 .name-bar:hover{
   transition: 0.3s;
   background-color: #0e203088;
+}
+
+@media (max-width: 600px) {
+  .name-bar__container {
+    display: none;
+  }
 }

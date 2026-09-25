@@ -3,14 +3,14 @@
    <div class="items" (click)="toggleFolder1()"
     [ngClass]="{'dropdown-active': service.folder1Open}"
    >
-      <img [src]= "service.folder1Open ? 'assets/icons/arrow-right-s-line.svg' : 'assets/icons/arrow-down-s-line.svg'" alt="arrow">
+      <img class="arrow" [class.open]="service.folder1Open" src="assets/icons/arrow-down-s-line.svg" alt="arrow">
       <img src="assets/icons/folder-3-fill-purple.svg" alt="folder">
       <p>bio.ts</p>
    </div>
    <div class="items" (click)="toggleFolder2()"
     [ngClass]="{'dropdown-active': service.folder2Open}"
    >
-      <img [src]= "service.folder2Open ? 'assets/icons/arrow-right-s-line.svg' : 'assets/icons/arrow-down-s-line.svg'" alt="arrow">
+      <img class="arrow" [class.open]="service.folder2Open" src="assets/icons/arrow-down-s-line.svg" alt="arrow">
       <img src="assets/icons/folder-3-fill-blue.svg" alt="folder">
       <p>ensino.ts</p>
    </div>

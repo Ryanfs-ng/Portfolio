@@ -11,3 +11,13 @@
   font-size: 1.5em;
   color: #5051D4;
 }
+
+@media (max-width: 600px) {
+  .main-title__content > h1 {
+    font-size: 2.2em;
+  }
+
+  .subtitle__content {
+    font-size: 1.1em;
+  }
+}

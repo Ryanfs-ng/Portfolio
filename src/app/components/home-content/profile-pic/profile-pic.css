@@ -1,9 +1,27 @@
-.profile-pic__container {
- display: flex;
+:host {
+  display: block;
+  flex-shrink: 0;
+}
 
+.profile-pic__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(200px, 26vw, 380px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 1px solid #353e4d;
+  box-shadow: 0 0 0 8px #0e203088, 0 0 60px #5051D433;
+  overflow: hidden;
+  color: #353e4d;
 }
 
 .profile-pic__container > img {
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.profile-pic__container > svg {
+  width: 55%;
 }

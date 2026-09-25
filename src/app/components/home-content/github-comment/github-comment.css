@@ -9,3 +9,7 @@
 .gitUrl > a > span{
   text-decoration: underline;
 }
+
+.gitUrl {
+  overflow-wrap: anywhere;
+}

@@ -52,3 +52,20 @@ img {
   flex: 1;
   overflow-y: auto;
 }
+
+@media (max-width: 768px) {
+  .projetos-content__container {
+    flex-direction: column;
+  }
+
+  .dropdown__container {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #353e4d;
+  }
+
+  .main-content__container {
+    width: 100%;
+  }
+}

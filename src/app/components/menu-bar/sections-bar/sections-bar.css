@@ -1,7 +1,16 @@
+:host {
+  display: block;
+  flex: 1;
+  min-width: 0;
+}
+
 .sections__container{
-  display: flex ;
+  display: flex;
   flex-direction: row;
-  width: 80vw;
+  flex: 1;
+  min-width: 0;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .section {
@@ -21,8 +30,7 @@
 }
 
 .section-contact{
-  position: absolute;
-  right: 0;
+  margin-left: auto;
   border-left: 1px solid #353e4d;
   padding: 0px 20px;
   line-height: 46px;
@@ -30,10 +38,20 @@
 
 .section-contact.active{
   border-bottom: 2px solid #da9b3e;
-  top: -1px;
 }
 
 .section-contact:hover {
   background-color: #0e203088;
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .section,
+  .section-contact {
+    padding: 0 12px;
+  }
+}
+
+.sections__container > a:last-child {
+  margin-left: auto;
 }

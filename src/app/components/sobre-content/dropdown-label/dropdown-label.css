@@ -1,7 +1,13 @@
- .dropdown__container{
+:host {
+  display: block;
+  flex-shrink: 0;
+  width: 250px;
+  border-right: 1px solid #353e4d;
+}
+
+.dropdown__container{
   display: flex;
   flex-direction: column;
-  flex: 1;
 }
 
 img {
@@ -10,11 +16,10 @@ img {
   color: #ffffffbe;
 }
 
-.dropdown__label {
+.dropdown__label,
+.dropdown__label-contact {
   display: flex;
-  padding: 10px;
-  width: 15.9vw;
-  padding-left: 20px;
+  padding: 10px 10px 10px 20px;
   border-bottom: 1px solid #353e4d;
   font-size: 14px;
   user-select: none;
@@ -22,25 +27,39 @@ img {
 }
 
 .dropdown__label-contact {
-  display: flex;
-  padding: 10px;
-  width: 15.9vw;
-  padding-left: 20px;
-  border-bottom: 1px solid #353e4d;
-  font-size: 14px;
-  user-select: none;
-  font-weight: bolder;
   border-top: 1px solid #353e4d;
 }
 
-
-.dropdown__label-contact > p{
-  color: #ffffff;
-  cursor: pointer;
-}
-
+.dropdown__label-contact > p,
 .dropdown__label > p {
   color: #ffffff;
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  :host {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #353e4d;
+  }
+}
+
+.dropdown__label,
+.dropdown__label-contact {
+  cursor: pointer;
+}
+
+.dropdown__label > img,
+.dropdown__label-contact > img {
+  transition: transform 0.2s;
+}
+
+.closed > img {
+  transform: rotate(-90deg);
+}
+
+.dropdown__label:focus-visible,
+.dropdown__label-contact:focus-visible {
+  outline: 1px solid #5051D4;
+  outline-offset: -1px;
+}

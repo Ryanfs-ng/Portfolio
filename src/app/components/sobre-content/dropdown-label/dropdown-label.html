@@ -1,17 +1,25 @@
- <div class="dropdown__container">
-  <div class="dropdown__label" *ngIf="service.showPersonalInfo">
+<div class="dropdown__container">
+  <div class="dropdown__label" *ngIf="service.showPersonalInfo" [class.closed]="!open.personal"
+    role="button" tabindex="0" [attr.aria-expanded]="open.personal"
+    (click)="toggle('personal')" (keydown.enter)="toggle('personal')" (keydown.space)="toggle('personal'); $event.preventDefault()">
     <img src="assets/icons/arrow-down-s-fill.svg" alt="">
     <p>info-pessoal</p>
   </div>
-  <div class="dropdown__label" *ngIf="service.showExpInfo">
-     <img src="assets/icons/arrow-down-s-fill.svg" alt="">
+  <app-dropdown-personal *ngIf="service.showPersonalInfo && open.personal"></app-dropdown-personal>
+
+  <div class="dropdown__label" *ngIf="service.showExpInfo" [class.closed]="!open.exp"
+    role="button" tabindex="0" [attr.aria-expanded]="open.exp"
+    (click)="toggle('exp')" (keydown.enter)="toggle('exp')" (keydown.space)="toggle('exp'); $event.preventDefault()">
+    <img src="assets/icons/arrow-down-s-fill.svg" alt="">
     <p>experiencias</p>
   </div>
-  <app-dropdown-personal *ngIf="service.showPersonalInfo"></app-dropdown-personal>
-  <app-dropdown-exp *ngIf="service.showExpInfo"></app-dropdown-exp>
-   <div class="dropdown__label-contact">
+  <app-dropdown-exp *ngIf="service.showExpInfo && open.exp"></app-dropdown-exp>
+
+  <div class="dropdown__label-contact" [class.closed]="!open.contact"
+    role="button" tabindex="0" [attr.aria-expanded]="open.contact"
+    (click)="toggle('contact')" (keydown.enter)="toggle('contact')" (keydown.space)="toggle('contact'); $event.preventDefault()">
     <img src="assets/icons/arrow-down-s-fill.svg" alt="">
     <p>contatos</p>
   </div>
-  <app-dropdown-contact></app-dropdown-contact>
+  <app-dropdown-contact *ngIf="open.contact"></app-dropdown-contact>
 </div>

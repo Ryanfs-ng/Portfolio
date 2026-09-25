@@ -1,3 +1,6 @@
 <div class="profile-pic__container">
-  <!-- <img src="assets/imgs/devexemplos.jp" alt="Foto de perfil" width="350px"> -->
+  <img *ngIf="!failed" src="assets/imgs/profile.jpg" alt="Foto de Ryan Ferreira" (error)="failed = true">
+  <svg *ngIf="failed" viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="Foto de perfil">
+    <path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-4.4 0-8 2.2-8 5v3h16v-3c0-2.8-3.6-5-8-5Z"/>
+  </svg>
 </div>

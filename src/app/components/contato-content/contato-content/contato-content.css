@@ -67,3 +67,34 @@ img {
   width: 100%;
 }
 
+
+@media (max-width: 900px) {
+  .contato__container,
+  .forms-full__container {
+    flex-direction: column;
+  }
+
+  .dropdown__container {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #353e4d;
+  }
+
+  .contato-content__container {
+    width: 100%;
+  }
+
+  .forms__container {
+    width: auto;
+    margin: 0;
+    border-right: none;
+    border-bottom: 1px solid #353e4d;
+  }
+
+  .formsCode__container {
+    height: auto;
+    margin: 0;
+    padding-bottom: 16px;
+  }
+}

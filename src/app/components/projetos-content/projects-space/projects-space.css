@@ -1,9 +1,9 @@
 .projects-space__container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
   gap: 30px;
   padding: 40px;
-  height: 85vh;
+  max-height: 85vh;
   overflow-y: auto;
 }
 
@@ -18,4 +18,11 @@
 .projects-space__container::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .projects-space__container {
+    padding: 20px 16px;
+    gap: 20px;
+  }
 }

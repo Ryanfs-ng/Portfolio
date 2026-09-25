@@ -13,7 +13,13 @@ import { DropdownExp } from "./dropdown-exp/dropdown-exp";
 })
 export class DropdownLabel {
 
+  open = { personal: true, exp: true, contact: true };
+
   constructor(public service:SharedServices ) {}
+
+  toggle(section: keyof typeof this.open) {
+    this.open[section] = !this.open[section];
+  }
 
 
 }

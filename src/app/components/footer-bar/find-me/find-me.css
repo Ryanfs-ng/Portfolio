@@ -7,3 +7,9 @@
 }
 
 
+
+@media (max-width: 600px) {
+  .find-me__bar__container {
+    display: none;
+  }
+}

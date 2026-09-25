@@ -24,3 +24,12 @@ a {
 }
 
 
+
+body {
+  padding-bottom: 46px; /* fixed footer height */
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}

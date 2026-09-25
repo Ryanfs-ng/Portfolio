@@ -1,9 +1,24 @@
 .home__container {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 80vw;
+  max-width: 1200px;
+  margin: 12vh auto 0;
+}
+
+.home__text {
+  display: flex;
   flex-direction: column;
-  width: 30vw;
-  height: 40vh;
-  margin: auto;
-  margin-right: 50vw;
-  margin-top: 20vh;
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  .home__container {
+    flex-direction: column-reverse;
+    width: auto;
+    margin: 6vh 20px 0;
+    gap: 30px;
+  }
 }

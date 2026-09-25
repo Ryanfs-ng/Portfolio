@@ -1,12 +1,19 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  min-width: 0;
+  overflow: auto;
+}
 
 .content__container {
   font-family: 'Fira Code', monospace;
   padding: 16px;
-  max-width: 40vw;
+  max-width: none;
   box-sizing: border-box;
-  border: 1px solid #3c3c3c;
-  overflow-x: auto;
-  height: 100%;
+  flex: 1 0 auto;
+  overflow: auto;
 }
 
 .jsonTitle {
